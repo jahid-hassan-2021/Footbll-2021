@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+            /* ---------------------tom section---------------- */
+.main{
+    background-color: #2D25A0;
+    width: 100%;
+    height: 95vh;
+}
+                /* --------------------nav------------------------ */
+nav{
+    width: 100%;
+    display: flex;
+	justify-content: space-between;
+	align-items:center;
+	height:6rem;
+	box-shadow:2px 2px 12px rgba(0,0,0,0.2);
+}
+
+nav i:nth-child(1){
+    display: none;
+}
+
+.nav-icon ul{
+    display: flex;
+}
+.nav-icon ul li a{
+	margin:3rem 1.5rem ;
+	color:#505050;
+	font-size: 1.5rem;
+	font-weight:700;
+    color: #fff;
+}
+nav .login a{
+    background-color: #E02C6D;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 12rem;
+    height: 3rem;
+    margin-right: 1.5rem;
+    color: #fff;
+}
+nav .login a i{
+    margin-right: 0.3rem;
+}
+
+        /* ---------------top section / text & imeag ------------------- */
+
+.main-area{
+    margin-top: 5rem;
+    display: flex;
+    padding: 0 5rem;
+    justify-content: space-between;
+    align-items: center;
+}
+.main-area .main-text{
+    text-align: left;
+}
+.main-area .main-text p{
+    font-size: 4rem;
+    font-weight: 600;
+    color: #fff;
+}
+.main-area .main-text a{
+    background-color: #E02C6D;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    width: 12rem;
+    height: 3rem;
+}
+.main-area .main-text a i{
+    margin-left: 0.5rem;
+}
+nav .login a:hover,
+.main-area .main-text a:hover{
+    background: #940808;
+    color: #1bc9e0;
+}
+.main-area .main-img img{
+    width: 30rem;
+}
+nav i{
+    display: none;
+}
+                /* ------------------------player------------------------ */
+.player-card{
+    width: 100%;
+    padding: 5rem ;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+}
+.card{
+    margin-top: 2rem;
+    padding: 0.5rem;
+    width: 20rem;
+    height: 30rem;
+    box-shadow: 0 0 5px rgba(0, 0, 0,0.2), 0 0 10px rgba(0, 0, 0,0.2);
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    color: #696969;
+}
+.card img{
+    width: 18rem;
+    height: 18rem;
+}
+.card p:nth-child(2){
+    font-size: 2rem;
+    margin: 0.5rem 0 0.2rem 0;
+}
+.card p:nth-child(3){
+    font-size: 1rem;
+    margin: 0.5rem 0;
+    text-align: justify;
+}
+                /* --------------------------copaamerica---------------- */
+.copa-america{
+    padding: 5rem 1rem;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: #696969;
+    
+}
+.copa-america h1{
+    padding: 0.5rem 5rem;
+    font-size: 2rem;
+    margin: 1.5rem auto;
+    box-shadow: 0 0 5px rgba(60, 48, 80, 0.2);
+}
+.copa-america img{
+    width: 70%;
+    margin: 0.5rem auto;
+}
+.copa-america p{
+    padding:  5rem;
+    margin: 1rem auto;
+    text-decoration: justify;
+    font-size: 1.3rem;
+    box-shadow: 0 0 5px rgba(60, 48, 80, 0.2);
+    text-align: justify;
+}
+                /* -----------------------footer------------------------- */
+footer{
+    width: 100%;
+    height: 15rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    color: #696969;
+}
+footer .footer-img img{
+    width: 25rem;
+    margin: 0 auto;
+}
+
+.footer-icon {
+    display: flex;
+}
+
+.footer-icon a {
+    width:40px;
+	height:40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color:#e6e3e3;
+	margin:20px 10px;
+	border-radius:50%;
+    font-size: 1.2rem;
+}
+.footer-copy p{
+    font-size: 1.2rem;
+}
+            /* -----------------mobile--------------------- */
+ @media(max-width:1080px){
+    .nav-icon ul li a{
+        font-size: 1rem;
+        margin: 2rem 1rem;
+    }
+    nav .login a{
+        font-size: 1.rem;}
+    .main-area{
+        flex-direction: column;
+    }
+    
+    .main-area .main-img img{
+        width: 40rem;
+        margin-top: 5rem;
+    }
+    .main-area .main-text{
+        margin: 1rem auto;
+    }
+    .main-area .main-text p{
+        display: inline;
+        margin: 0.5rem ;
+        font-size: 3.3rem;
+        font-weight: 600;
+    }
+    .main-area .main-text a{
+        margin: 2rem 0 2rem auto;
+    }
+    .player-card{
+        grid-template-columns: repeat(2, 1fr);
+       }
+ }
+ 
+ @media(max-width:799px){
+    nav i:nth-child(1){
+         display: block;
+         font-size: 2rem;
+         color: #fff;
+         margin: auto 1.5rem;
+     }
+     nav a i{
+         font-size: 1.2rem;
+         margin: auto 0.5rem;
+     }
+     
+    nav .login a{
+        font-size: 1.2rem;
+    }
+     .nav-icon{
+         display: none;
+     }
+     nav{
+         box-shadow: none;
+     }
+     .main-area{
+         display: grid;
+        grid-template-columns: repeat(1, 1fr);
+     }
+    .main-area .main-text a{
+         margin: 1.5rem 3rem 1.5rem 0.5rem;
+     }
+     .player-card{
+        padding: 2rem;
+    }
+    
+     .main-area .main-img img{
+        width: 30rem;
+        margin: 0 auto;
+    }
+    .copa-america{
+        padding: 0.2rem;
+        margin: 0.2rem;
+    }
+    
+     
+ }
+ @media(max-width:550px){
+     body{
+         overflow-x: hidden;
+     }
+     nav{
+         width: 100%;
+         height: 4rem;
+     }
+    .player-card{
+        grid-template-columns: repeat(1, 1fr);
+       }
+       .main-area .main-img{
+           display: flex;
+           justify-content: center;
+           align-items: center;
+       }
+       .main-area .main-img img{
+        width: 60%;
+        margin: 0.5rem auto;
+    }
+    .main-area{
+        height: 95vh;
+        margin: 0;
+        padding: 1rem;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .main-text{
+        margin: 0;
+    }
+    .player-card{
+        padding: 1rem;
+    }
+    .card{
+        width: 90%;
+    }
+    .card p:nth-child(2){
+        font-size: 1.2rem;
+    }
+    .card img{
+        width: 90%;
+        height: 12rem;
+    }
+    .main-area .main-text p{
+        margin: 0.5rem auto ;
+        font-size: 35rem;
+        display: block;
+        font-size: 2rem;
+        font-weight: 500;
+    }
+    .main-area .main-text a{
+        margin: 0 auto;
+        font-size: 1rem;
+        padding: 0.2rem;
+    }
+    .copa-america p{
+        margin: 0.3rem auto;
+        padding: 0.2rem;
+        font-size: 0.8rem;
+    }
+    
+    footer .footer-img img{
+        width: 90%;
+        margin: 0 auto;
+    }
+ }
